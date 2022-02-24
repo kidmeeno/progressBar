@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #myProgress {
+            width: 100%;
+            background-color: #EBEBEB;
+        }
+
+        .percent {
+            position: absolute;
+            right: 5px;
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            bottom: 0;
+            font-weight: bold;
+        }
+
+        .myBar {
+            width: 50%;
+            height: 30px;
+            border-radius: 50px;
+            border: 1px solid #E1E1E1;
+            position: relative;
+        }
+
+        .bar {
+            margin: 10px 0;
+            border-radius: 50px;
+        }
+
+        #firstBar {
+            background-color: #AEDF69;
+        }
+
+        #secondBar {
+            background-color: #FA7D6E;
+        }
+
+        #thirdBar {
+            background-color: #FEFEFE;
+        }
+
+        #fourthBar {
+            background-color: #9AD1F4;
+        }
+
+        #fiftBar {
+            background-color: #FFD776;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="myProgress" class="bar">
+        <div id="firstBar" class="myBar"><span class="percent">50%</span></div>
+    </div>
+    <div id="myProgress" class="bar">
+        <div id="secondBar" class="myBar"><span class="percent">50%</span></div>
+    </div>
+    <div id="myProgress" class="bar">
+        <div id="thirdBar" class="myBar"><span class="percent">50%</span></div>
+    </div>
+    <div id="myProgress" class="bar">
+        <div id="fourthBar" class="myBar"><span class="percent">50%</span></div>
+    </div>
+    <div id="myProgress" class="bar">
+        <div id="fiftBar" class="myBar"><span class="percent">50%</span></div>
+    </div>
+    <button onclick="move()">Finish</button>
+    <script src="./app.js"></script>
+</body>
+
+</html>
